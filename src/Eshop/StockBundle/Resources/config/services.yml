@@ -1,0 +1,4 @@
+services:
+#    eshop_stock.example:
+#        class: Eshop\StockBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

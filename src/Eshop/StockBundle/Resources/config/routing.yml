@@ -1,0 +1,87 @@
+eshop_stock_homepage:
+    path:     /
+    defaults: { _controller: EshopStockBundle:Default:index }
+
+eshop_stock_list:
+    path:     /list
+    defaults: { _controller: EshopStockBundle:Categorie:list }
+
+eshop_stock_liststok:
+    path:     /liststok
+    defaults: { _controller: EshopStockBundle:Stock:liststok }
+
+eshop_stock_delete:
+    path:     /delete/{id}
+    defaults: { _controller: EshopStockBundle:Categorie:delete }
+
+eshop_stock_ajout:
+    path:     /ajout
+    defaults: { _controller: EshopStockBundle:Categorie:ajout }
+
+eshop_stock_update:
+    path:     /update/{id}
+    defaults: { _controller: EshopStockBundle:Categorie:update }
+
+eshop_stock_listf:
+    path:     /listf
+    defaults: { _controller: EshopStockBundle:Categorie:listf }
+
+eshop_stock_deletestok:
+    path:     /deletestok/{id}
+    defaults: { _controller: EshopStockBundle:Stock:deletestok }
+
+eshop_stock_ajoutstok:
+    path:     /ajoutstok
+    defaults: { _controller: EshopStockBundle:Stock:ajoutstok }
+
+eshop_stock_updatestok:
+    path:     /updatestok/{id}
+    defaults: { _controller: EshopStockBundle:Stock:updatestok }
+
+eshop_stock_listprod:
+    path:     /listprod
+    defaults: { _controller: EshopStockBundle:Produit:listprod }
+
+eshop_stock_ajoutprod:
+    path:     /ajoutprod
+    defaults: { _controller: EshopStockBundle:Produit:ajoutprod }
+
+eshop_stock_listprodf:
+    path:     /listprodf
+    defaults: { _controller: EshopStockBundle:Produit:listprodf }
+
+eshop_stock_ajoutReclamation:
+    path:     /ajoutReclamation
+    defaults: { _controller: EshopStockBundle:Reclamation:ajout }
+
+eshop_stock_ajoutEve:
+    path:     /ajoutEve
+    defaults: { _controller: EshopStockBundle:Evenement:ajoutEve }
+
+eshop_stock_listEve:
+    path:     /listEve
+    defaults: { _controller: EshopStockBundle:Evenement:listEve }
+
+eshop_stock_deleteEve:
+    path:     /deleteEve/{id}
+    defaults: { _controller: EshopStockBundle:Evenement:deleteEve }
+
+eshop_stock_updateEve:
+    path:     /updateEve/{id}
+    defaults: { _controller: EshopStockBundle:Evenement:updateEve }
+
+eshop_stock_listprom:
+    path:     /listprom
+    defaults: { _controller: EshopStockBundle:Promotion:listprom }
+
+eshop_stock_deleteprom:
+    path:     /deleteprom/{id}
+    defaults: { _controller: EshopStockBundle:Promotion:deleteprom }
+
+eshop_stock_ajoutprom:
+    path:     /ajoutprom
+    defaults: { _controller: EshopStockBundle:Promotion:ajoutprom }
+
+eshop_stock_updateprom:
+    path:     /updateprom/{id}
+    defaults: { _controller: EshopStockBundle:Promotion:updateprom }

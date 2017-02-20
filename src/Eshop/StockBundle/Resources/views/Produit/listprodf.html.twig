@@ -1,0 +1,30 @@
+
+{% extends "EshopStockBundle:Default:indexf.html.twig" %}
+
+
+{% block container %}
+
+    {% for produit in produits %}
+
+        <div class="products-row">
+        <div class="col-md-3 product-grids">
+            <div class="agile-products">
+                <div class="new-tag"><h6>20%<br>Off</h6></div>
+                <a href="single.html"><img src="{{ asset('images/')}}{{ produit.nomImage }}" alt="ajoutprod" style="width: 50px; height: 50px"></div></a>
+                <div class="agile-product-text">
+                    <h5><a href="single.html">{{ produit.nom }}</a></h5>
+                    <h6><del>$200</del> {{ produit.prix }}</h6>
+                    <form action="#" method="post">
+                        <input type="hidden" name="cmd" value="_cart" />
+                        <input type="hidden" name="add" value="1" />
+                        <input type="hidden" name="w3ls_item" value="Audio speaker" />
+                        <input type="hidden" name="amount" value="100.00" />
+                        <button type="submit" class="w3ls-cart pw3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+
+{% endblock container %}
